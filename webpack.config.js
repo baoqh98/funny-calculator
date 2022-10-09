@@ -8,7 +8,6 @@ module.exports = {
     path: path.resolve(__dirname, 'public'),
     filename: 'main.js',
   },
-
   target: 'web',
   devServer: {
     port: '3000',
