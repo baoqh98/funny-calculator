@@ -1,9 +1,13 @@
 import React from 'react';
 
-import './Button.css';
+import './Button.scss';
 
-const Button = () => {
-  return <div className='Button'>Button</div>;
+const Button = ({ content, type }) => {
+  return (
+    <button className={`Button ${content === '0' ? 'zero' : ''} ${type || ''}`}>
+      {content}
+    </button>
+  );
 };
 
 export default Button;
