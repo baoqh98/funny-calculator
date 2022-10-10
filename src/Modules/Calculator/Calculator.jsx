@@ -164,7 +164,7 @@ const Calculator = () => {
       const date = new Date().toDateString();
       const calcHistory = JSON.parse(localStorage.getItem('calcHistory')) || [];
       const updatedHistory = [...calcHistory, { date, result }];
-      console.log(updatedHistory);
+
       localStorage.setItem('calcHistory', JSON.stringify(updatedHistory));
       return;
     }
