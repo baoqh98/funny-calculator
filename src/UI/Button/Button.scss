@@ -9,10 +9,9 @@
   height: 110px;
   justify-content: center;
   width: 110px;
-  transition: filter 0.3s ease-in;
-  &:active,
-  &:focus {
-    filter: brightness(120%);
+  transition: all 0.3s ease-in;
+  &:active {
+    background-color: #aaa;
   }
 
   &.zero {
@@ -27,9 +26,15 @@
   &.function {
     color: black;
     background: #a5a5a5;
+    &:active {
+      background-color: #dadada;
+    }
   }
 
   &.operator {
     background: #f1a33c;
+    &:active {
+      background-color: #ffd39b;
+    }
   }
 }

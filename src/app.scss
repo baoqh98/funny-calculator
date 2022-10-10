@@ -10,8 +10,16 @@
     justify-content: center;
     align-items: center;
     column-gap: 16px;
-    button {
+    .nav-link {
       padding: 8px;
+      text-decoration: none;
+      color: #999;
+      border-radius: 4px;
+    }
+
+    .active {
+      background-color: #f1a33c;
+      color: #fff;
     }
   }
 }
